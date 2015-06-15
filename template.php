@@ -1238,7 +1238,7 @@ function flickr_photos_homepage($user_id, $limit = 15, $language)
         'method'      => 'flickr.photos.search',
         'user_id'     => $user_id,
         'sort'        => 'interestingness_desc',
-        'format'      => 'php_serial',
+        //'format'      => 'php_serial',
         'extras'      => 'description',
     );
 
@@ -1250,11 +1250,14 @@ function flickr_photos_homepage($user_id, $limit = 15, $language)
     }
 
     // Open API URL and decode response as PHP values
-    $url = 'http://api.flickr.com/services/rest/?'.implode('&', $encoded_params);
+    $url = 'https://api.flickr.com/services/rest/?'.implode('&', $encoded_params);
     //echo $url;exit;
-    $rsp = file_get_contents($url);
+    //$rsp = file_get_contents($url);
+    $rsp = simplexml_load_file($url);
     //var_dump($rsp);exit;
-    $rsp_obj = unserialize($rsp);//print_r($rsp_obj);exit;
+    $json_obj = json_encode($rsp);
+    $rsp_obj = json_decode($json_obj, true);
+    //print_r($rsp_obj);exit;
     $count = count($rsp_obj['photos']['photo']);
 
     // HTML output
@@ -1263,17 +1266,15 @@ function flickr_photos_homepage($user_id, $limit = 15, $language)
     for ($i = 0; $i < $limit; $i++)
     {
         // Each array 'photo' in array 'photos' is given the index $i which is increased by 1 each run
-        $photo = $rsp_obj['photos']['photo'][$i];
-
-        $flickr_description = $rsp_obj['photos']['photo'][$i]['description']['_content'];
+        $photo = $rsp_obj['photos']['photo'][$i]['@attributes'];
+        //print_r($photo);
+        $flickr_description = $rsp_obj['photos']['photo'][$i]['description'];
         $description = photo_description_by_language($flickr_description, $language);
         //$description = "";
         // Picture-Url
-        $purl = 'http://farm'.$photo['farm'].'.'.'static'.'.'.'flickr.com/'.$photo['server'].'/'.$photo['id'].'_'.$photo['secret'].'_s.jpg';
-
+        $purl = 'https://farm'.$photo['farm'].'.'.'static'.'.'.'flickr.com/'.$photo['server'].'/'.$photo['id'].'_'.$photo['secret'].'_s.jpg';
         // Flickr-Url
-        $furl = 'http://www.flickr.com/photos/'.$photo['owner'].'/'.$photo['id'].'/';
-
+        $furl = 'https://www.flickr.com/photos/'.$photo['owner'].'/'.$photo['id'].'/';
         // Link-URL
         $lurl = '<a href="'.$furl.'" target="_blank">'.'<img alt="'.$photo['title'].'" src="'.$purl.'" /><span>' . $photo['title'] . '</span></a>';
 
