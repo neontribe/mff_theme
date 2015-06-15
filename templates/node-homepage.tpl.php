@@ -98,9 +98,15 @@
 
 <div class="wrapper-home">
     <div class="wrapper2">
-<!--
-<script type="text/javascript" src="https://www.policat.org/api/js/widget/5497"></script>
-<script type="text/javascript" src="https://www.policat.org/api/js/widget/5498"></script> --!>
+      <div class="june2015-petition">
+      <?php if ($language == 'en'): ?>
+        <script type="text/javascript" src="https://www.policat.org/api/js/widget/5497"></script>
+      <?php endif; ?>
+      <?= $language; ?>
+      <?php if ($language == 'es'): ?>
+        <script type="text/javascript" src="https://www.policat.org/api/js/widget/5500"></script>
+      <?php endif; ?>
+      </div> <!-- end petition added June 2015 -->
         <div class="clr">
             <div class="half left">
                 <h2><?= $node->field_translation1[0]['value'] ?></h2>

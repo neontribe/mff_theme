@@ -151,12 +151,17 @@ div.mm li.f {
 div.mm a,
 div.mm a:link,
 div.mm a:visited {
-  padding: 8px 12px 11px;
+  padding: 9px 12px 11px;
   color: #fecc00;
   background: transparent;
   color: #fecc00;
   display: block;
   text-decoration: none;
+}
+
+/** Hack to fix different logo sizes */
+.lang_es + div.mm a {
+  padding: 8px 12px 11px;
 }
 
 div.mm li.f a.active,
