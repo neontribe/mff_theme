@@ -129,6 +129,7 @@
                 <h2><?=$node->field_translation3[0]['value'] ?></h2>
 
                 <div class="video-wrap">
+                <?= youtube_videos_homepage('makefruitfair', $youtube_playlist_id,$node->field_hp_video[0]["value"]) ?>
                 </div>
                 <div class="btn">
                     <a href="http://www.youtube.com/user/makefruitfair" target="_blank"><?= $node->field_translation4[0]['value'] ?></a>
