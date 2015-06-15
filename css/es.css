@@ -1,0 +1,50 @@
+div.logo span {
+  background: url(../images/lang/es/logo.gif) no-repeat;
+}
+
+div.head span {
+  background: url(../images/lang/es/head.gif) no-repeat;
+}
+
+div.lang {
+  width: 200px;
+}
+
+div.homeWrap {
+  background: transparent;
+}
+
+div.hTop2 {
+  width: 360px;
+}
+
+div.hTop1 {
+  width: 500px;
+}
+
+div.homeWrap div.wrapper {
+  background: #fffae8 url(../images/home-body2.gif) 0 0 no-repeat;
+}
+
+div.eu {
+  bottom: -10px;
+}
+
+div.mm {
+  padding-top: 196px;
+}
+
+.main div.mm li a {
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 14px;
+}
+
+div.ctext blockquote {
+  font-size: 18px;
+}
+
+div.lang_es {
+top: 10px;
+width:  213px;
+}

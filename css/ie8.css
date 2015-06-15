@@ -1,0 +1,18 @@
+/*
+ * IE8 Styl Za ferove banany
+ * Autor: Jan Rezac
+ *
+ */
+
+div.mm a,
+div.mm a:link,
+div.mm a:visited {
+  padding-top: 9px;
+}
+
+div.mm li.f a.active,
+div.mm li.f a.active-trail,
+div.mm li.f a.active:link,
+div.mm li.f a.active:visited {
+  padding: 17px 14px 11px;
+}

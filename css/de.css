@@ -1,0 +1,35 @@
+div.logo span {
+  background: url(../images/lang/de/logo.gif) no-repeat;
+}
+
+div.head span {
+  background: url(../images/lang/de/head.gif) no-repeat;
+}
+
+div.lang {
+  width: 200px;
+}
+
+div.homeWrap {
+  background: transparent;
+}
+
+div.hTop2 {
+  width: 360px;
+}
+
+div.hTop1 {
+  width: 500px;
+}
+
+div.homeWrap div.wrapper {
+  background: #fffae8 url(../images/home-body2.gif) 0 0 no-repeat;
+}
+
+div.eu {
+  bottom: 0;
+}
+
+div.ctext blockquote {
+  font-size: 22px;
+}

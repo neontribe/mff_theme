@@ -1,0 +1,45 @@
+div.logo span {
+  background: url(../images/lang/en/logo.gif) no-repeat;
+}
+
+div.head span {
+  background: url(../images/lang/en/head.gif) no-repeat;
+}
+
+div.lang {
+  width: 200px;
+}
+
+.homeWrap .fb {
+  display: none;
+}
+
+div.eu {
+  bottom: -10px;
+}
+
+div.homeWrap {
+  background: transparent;
+}
+
+div.hTop2 {
+  width: 280px;
+}
+
+div.hTop1 {
+  width: 560px;
+}
+
+div.homeWrap div.wrapper {
+  background: #fffae8 url(../images/home-body2.gif) 0 0 no-repeat;
+}
+
+.main div.mm li a {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+div.lang_en {
+top: 10px;
+width:  228px;
+}

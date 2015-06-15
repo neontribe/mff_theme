@@ -1,0 +1,93 @@
+html {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body, table, th {
+  font-size: 1em;
+  font-family: 'Trebuchet MS', 'Geneva CE', lucida, sans-serif;
+  text-align: left;
+}
+
+body, form, fieldset,
+h1, h2, h3, h4, h5, h6, p, pre,
+blockquote, ul, ol, dl, address, dd {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Geneva CE', lucida, sans-serif;
+  font-size: 1em;
+}
+
+fieldset {
+  border: none;
+}
+
+input, select, textarea {
+  font-size: 100%;
+  font-family: 'Trebuchet MS', 'Geneva CE', lucida, sans-serif;
+}
+
+abbr {border-bottom: 1px dotted;cursor: help}
+ul li {list-style-type: none}
+img {border: 0 none;display: block;}
+
+.clr {
+  width: 100%;
+  overflow: hidden;
+}
+
+.clr2 {
+  width: 100%;
+  overflow: visible;
+}
+
+.hid {display: none}
+.hid2 {position: absolute;left: -9999px}
+
+hr.n {
+  display: none;
+}
+
+hr.cleaner {
+  clear: both;
+  height: 1px;
+  margin: -1px 0 0 0;
+  border: none;
+  visibility: hidden;
+}
+
+.rel {position: relative;}
+.left {float: left;}
+.right {float: right;}
+.ra {text-align: right;}
+
+table {
+  border-collapse: collapse;
+}
+
+.imgr, .imgr span {
+  overflow: hidden;
+  display: block;
+  position: relative;
+  top: 0;
+  text-decoration: none;
+  left: 0;
+}
+
+.imgr span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.l {
+  margin-right: 0 !important;
+}
+
+sup {
+  top: 4px;
+  line-height: 0;
+  display: inline;
+  position: relative;
+}
