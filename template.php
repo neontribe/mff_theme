@@ -7,11 +7,11 @@ function banany_preprocess(&$vars)
     $site_url = array
     (
         'cz' => 'http://www.zaferovebanany.cz',
-        'fr' => 'http://www.lejustefruit.org',
+        //'fr' => 'http://www.lejustefruit.org',
         'en' => 'http://www.makefruitfair.org.uk',
         'es' => 'http://www.frutasjustas.org',
         'de' => 'http://www.makefruitfair.de',
-        'pl' => 'http://www.sprawiedliweowoce.eco.pl',
+        //'pl' => 'http://www.sprawiedliweowoce.eco.pl',
     );
 
     $node = $vars['node'];
