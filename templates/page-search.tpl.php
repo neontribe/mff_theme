@@ -31,7 +31,7 @@
         <?php endif;?>
       </div>      
       <div class="head imgr">
-        <?=t('Campaigning for fair and sustainable banana and pineapple supplu chains')?><span></span>
+        <?=t('Campaigning for fair and sustainable banana and pineapple supply chains')?><span></span>
       </div>
 
       <?php if($language != 'cz' && $language != 'fr'):?>      
