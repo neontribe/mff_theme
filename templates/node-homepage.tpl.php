@@ -102,9 +102,8 @@
       <?php if ($language == 'en'): ?>
         <script type="text/javascript" src="https://www.policat.org/api/js/widget/5497"></script>
       <?php endif; ?>
-      <?= $language; ?>
       <?php if ($language == 'es'): ?>
-        <script type="text/javascript" src="https://www.policat.org/api/js/widget/5500"></script>
+        <script type="text/javascript" src="https://www.policat.org/api/js/widget/5510"></script>
       <?php endif; ?>
       </div> <!-- end petition added June 2015 -->
         <div class="clr">
