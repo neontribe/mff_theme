@@ -23,6 +23,12 @@
                 <td><a href="http://www.l-arka.org/about/kkg/"><img src="<?=$image_path?>/partner/kkg_logo.png" alt="" /></a></td>
                 <td><a href="http://www.fairtrade-advocacy.org/"><img src="<?=$image_path?>/partner/FTAO_logo.png" alt="" /></a></td>
                 <td><a href="http://www.zalabriviba.lv/greenliberty/"><img src="<?=$image_path?>/partner/ZB_logo.png" alt="" /></a></td>
+                <td><a href="http://www.urocal.org"><img src="<?=$image_path?>/partner/urocal.png" alt="Urocal" target="_blank" /></a></td>
+              </tr>
+              <tr>
+                <td><img src="<?=$image_path?>/partner/FAWU_logo.jpg" /></td>
+                <td></td>
+                <td></td>
                 <td></td>
               </tr>
             </table>
