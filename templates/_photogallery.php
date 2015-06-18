@@ -3,22 +3,18 @@ $photosOnRow = isset($photosOnRow)?$photosOnRow:3;
 $thumbPresent = isset($thumbPresent)?$thumbPresent:"fotogalerie-list";
 $photos = isset($photos)?$photos:$node->field_fotogalerie_fotky;
 
+if ($photos):
 $count = count($photos);
 $open = false;
 $counter = 0;
 
-
-
-foreach ($photos as $foto):
+  foreach ($photos as $foto):
     if($counter % $photosOnRow == 0):
-        
-         if($open):
+       if($open):
          $open = false;
-    ?>
-        </div>
-        <?php
-        endif;
-        ?>
+?>
+</div>
+      <?php endif; ?>
 <div class="photos clr">
     <?php
     $open = true;
@@ -33,14 +29,13 @@ foreach ($photos as $foto):
         </a>
     </div>
 <?php
-$counter++;
-endforeach;
+  $counter++;
+  endforeach;
 ?>
 
 <?php
-if ($open):
+  if ($open):
     ?>
 </div>
-<?php
-  endif;
-?>
+  <?php endif; ?>
+<?php endif; ?>
