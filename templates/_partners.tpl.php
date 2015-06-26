@@ -5,12 +5,20 @@
               <tr>
                 <td><a href="http://www.fairtrade-advocacy.org/"><img src="<?=$image_path?>/partner/FTAO_logo.png" alt="Fairtrade Advocacy" target="_blank" /></a></td>
                 <td><a href="http://www.bananalink.org.uk/"><img src="<?=$image_path?>/partner/bananalink.gif" width="120px" alt="Banana Link" target="_blank" /></a></td>
-		<td><a href="http://www.l-arka.org/about/kkg/"><img src="<?=$image_path?>/partner/kkg_logo.png" alt="KKG" target="_blank" /></a></td>
+		<td><a href="http://www.l-arka.org/about/kkg/"><img src="<?=$image_path?>/partner/kkg_logo.png" alt="Koperattiva Kummer&#267; &#288ust" target="_blank" /></a></td>
 		<td></td>
 	      </tr>
 	      <?php endif; ?>
+              <?php if ($language == 'es'):?>
               <tr>
-                <td><a href="http://www.tudatosvasarlo.hu/">TVE</a></td>
+                <td><a href="http://www.fairtrade-advocacy.org/">Fairtrade Advocacy</a></td>
+                <td><a href="http://www.bananalink.org.uk/">Banana Link</a></td>
+		<td><a href="http://www.l-arka.org/about/kkg/">Koperattiva Kummer&#267; &#288ust</a></td>
+		<td></td>
+	      </tr>
+	      <?php endif; ?>
+	      <tr>
+                <td><a href="http://www.tudatosvasarlo.hu/">Tudatos V&#225;s&#225;rl&#243;</a></td>
                 <td><a href="http://www.oxfam.de">Oxfam Deutschland</a></td>
                 <td><a href="http://www.suedwind-agentur.at/">Suedwind</a></td>
                 <td><a href="http://www.maibine.eu/">Maibine</a></td>
