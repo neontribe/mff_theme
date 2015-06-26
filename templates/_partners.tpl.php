@@ -1,12 +1,14 @@
           <div class="partners">
             <h2><?=t('Partners in the campaign')?></h2>
-            <table>
+	    <table>
+              <?php if ($language == 'en'):?>
               <tr>
                 <td><a href="http://www.fairtrade-advocacy.org/"><img src="<?=$image_path?>/partner/FTAO_logo.png" alt="Fairtrade Advocacy" target="_blank" /></a></td>
                 <td><a href="http://www.bananalink.org.uk/"><img src="<?=$image_path?>/partner/bananalink.gif" width="120px" alt="Banana Link" target="_blank" /></a></td>
 		<td><a href="http://www.l-arka.org/about/kkg/"><img src="<?=$image_path?>/partner/kkg_logo.png" alt="KKG" target="_blank" /></a></td>
 		<td></td>
 	      </tr>
+	      <?php endif; ?>
               <tr>
                 <td><a href="http://www.tudatosvasarlo.hu/">TVE</a></td>
                 <td><a href="http://www.oxfam.de">Oxfam Deutschland</a></td>
